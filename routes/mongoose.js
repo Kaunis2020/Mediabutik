@@ -3,7 +3,7 @@
  */
 
 const url1 = 'mongodb://localhost/mediadatabas';
-const url2 = 'mongodb+srv://new-user_2020:sjd843h_z8dukh@cluster0-ytjbf.mongodb.net/mediadatabas?retryWrites=true&w=majority';
+const url2 = process.env.MONGODB_URI;
 const mongoose = require("mongoose");
 mongoose.connect(url2, {useNewUrlParser: true,
     useUnifiedTopology: true, useFindAndModify: true});
