@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--Larissa Rosenbrant-->
+<html>
+    <head>
+        <title>Om oss</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="javascripts/angular.min.js"></script>
+        <link rel="stylesheet" href="stylesheets/bootstrap.css" type="text/css" />
+        <link rel="stylesheet" href="stylesheets/style.css" type="text/css" />
+        <link rel="stylesheet" href="stylesheets/sitestyle.css" type="text/css" />
+        <link rel="stylesheet" href="stylesheets/modalstil.css" type="text/css" />
+    </head>
+    <body>
+        <div class="navbar navbar-inverse navbar-fixed-top">        
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="white"><a href="index.html">  &nbsp;  &nbsp;  Online Mediabutik</a></li>
+                        <li class="white"><a href="utbud.html">Sortiment</a></li>
+                        <li class="white"><a href ="#">Om oss</a></li>
+                        <li class="white"><a href="login.html">Logga in</a></li>
+                        <li class="white"><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </div>
+            </div>    
+        <div class="intent">
+            <h2 class="rubrik"> Våra Fina Medarbetare</h2>
+            <p class="intent">
+                Nedan kan Du se alla våra medarbetare,<br/>som ingår i vårt underbara arbetsteam.<br />
+                Klicka på varje medarbetare för att se.<br />
+                Vi hjälper Dig när Du behöver oss!
+            </p>
+        </div>
+        <div id="myModal" class="mymodal">
+            <span class="myclose" onclick="closethis();">&times;</span>
+            <img src="" class="mymodal-content" id="img01" alt="pic">
+            <div id="caption"></div>
+            <div id="caption2"></div>
+        </div>
+        <div id="tabell" data-ng-app="myApp" ng-controller="staffCtrl" class="container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID-Nr</th>
+                        <th>Namn</th>
+                        <th>Avdelning</th>
+                        <th>E-post</th>
+                        <th>Telefon</th>
+                        <th width="10%">Info</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="me in staff">
+                        <td>{{me.Nummer}}</td>
+                        <td>{{me.First_name + "  " + me.Last_name}}</td>
+                        <td>{{me.Department}}</td>
+                        <td class="epost">{{me.Email}}</td>
+                        <td>{{me.Phone}}</td>
+                        <td width="10%" class = "klickamig" id="varna" ng-click="showInfo(me);">info</td>
+                    </tr>
+                </tbody>
+            </table>         
+        </div>
+        <br/>
+        <script src="javascripts/angularStaff.js"></script>
+    </body>
+</html>

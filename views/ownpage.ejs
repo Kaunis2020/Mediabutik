@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title><%= title %></title>
+        <script src="../../javascripts/ejs.min.js"></script>
+        <script src="../../javascripts/jquery-3.4.1.min.js"></script>
+        <script src="../../javascripts/userpage.js"></script>
+        <link rel="stylesheet" href="../../stylesheets/bootstrap.css" type="text/css" />
+        <link rel="stylesheet" href="../../stylesheets/vision.css">
+        <link rel="stylesheet" href="../../stylesheets/inputstyle.css">
+    </head>
+    <body>
+        <header>
+            <%- include ('meny'); %>
+        </header>        
+        <main>
+            <div class="myjumbo">
+                <div class="centrerat">
+                    <h2>Din egen sida</h2>
+                    <p>Du är inloggad som: <%= personname %></p>
+                    <h3>Tillgängliga databastjänster</h3>
+                    <br/>
+                    <div><%- include ('contact'); %></div>
+                    <br/>
+                </div>
+            </div>
+        </main>
+        <br/>
+        <div id="notes"></div>
+        <br/>
+    </body>
+</html>

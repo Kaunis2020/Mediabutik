@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!-- Larissa Rosenbrant, laro0501;-->
+<html>
+    <head>
+        <title>Media-sortiment</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="javascripts/angular.min.js"></script>
+        <link rel="stylesheet" href="stylesheets/bootstrap.css" type="text/css" />
+        <link rel="stylesheet" href="stylesheets/style.css" type="text/css" />
+        <link rel="stylesheet" href="stylesheets/modalstil.css" type="text/css" />
+    </head>
+    <body>
+        <div class="navbar navbar-inverse navbar-fixed-top">        
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="white"><a href="index.html">  &nbsp;  &nbsp;  Online Mediabutik</a></li>
+                    <li class="white"><a href="#">Sortiment</a></li>
+                    <li class="white"><a href ="about.html">Om oss</a></li>
+                    <li class="white"><a href="login.html">Logga in</a></li>
+                    <li class="white"><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>    
+        <h1 class ="rubrik">Vårt utbud av media</h1>
+        <div id="videoModal" class="videomodal">
+            <span class="myclose" onclick="closethis();">&times;</span>
+            <div id="rightspalt">
+                <div id="typ"></div>
+                <div id="story"></div>
+                <div id="year"></div>
+                <div id="price"></div>
+            </div>
+            <div id="leftspalt">
+                <img src ="" class="videomodal-content" id="img01" alt="pic">
+                <div id="videocaption"></div>
+            </div>
+        </div>
+        <div id="tabell" data-ng-app="myApp" ng-controller="medCtrl" class="container">
+            <div ng-include="'pagination.html'"></div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID-Nr</th>
+                        <th>Titel</th>
+                        <th>Typ</th>
+                        <th>Genre</th>
+                        <th>Info</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="me in pagedItems[currentPage]">
+                        <td>{{me.ID_Nr}}</td>
+                        <td>{{me.Titel}}</td>
+                        <td>{{me.HuvudTyp}}</td>
+                        <td>{{me.Genre}}</td>
+                        <td class = "klickamig" id="varna" ng-click="showInfo(me);">info</td>
+                    </tr>
+                </tbody>
+            </table> 
+            <div ng-include="'pagination.html'"></div>
+        </div>
+        <script src="javascripts/angularMedia.js"></script>
+    </body>
+</html>

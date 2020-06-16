@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!-- Larissa Rosenbrant -->
+<html>
+    <head>
+        <title>Kontakta oss</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="javascripts/angular.min.js"></script>
+        <link rel="stylesheet" href="stylesheets/bootstrap.css" type="text/css" />
+        <link rel="stylesheet" href="stylesheets/vision.css" type="text/css" />
+    </head>
+    <body>
+        <div class="navbar navbar-inverse navbar-fixed-top">        
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="white"><a href="index.html">  &nbsp;  &nbsp;  Online Mediabutik</a></li>
+                    <li class="white"><a href="utbud.html">Sortiment</a></li>
+                    <li class="white"><a href ="about.html">Om oss</a></li>
+                    <li class="white"><a href="login.html">Logga in</a></li>
+                    <li class="white"><a href="#">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+        <div data-ng-app="kontApp" ng-controller="kontCtrl" class="container">
+            <div class="centrerat">
+                <h2><b>Kontakta oss</b></h2>
+                <p>På denna sida kan Du kontakta oss<br/>
+                    Vi besvarar alla brev inom två arbetsdagar</p>
+            </div>        
+            <form id="ju-srs" name="kontaktform" novalidate>
+                <div class="env-form">
+                    <div class="env-form-element" >
+                        <label for="yourname" class="env-form-element__label env-text-weight--bold">Ditt namn <span class="required">*</span></label>
+                        <div class="env-form-element__control">
+                            <input class="env-form-input" type="text" id="yourname" name="yourname" minlength="4" ng-model="yourname" ng-pattern=" /^[a-zA-Z\s]*$/" aria-required="true" required>
+                            <span style="color:red" ng-show="kontaktform.yourname.$invalid">
+                                <span ng-show="kontaktform.yourname.$error.required">Namn ska anges</span>
+                            </span>
+                        </div>
+                    </div>         
+                    <div class="env-form-element" >
+                        <label for="email" class="env-form-element__label env-text-weight--bold">Din e-post <span class="required">*</span></label>
+                        <div class="env-form-element__control">
+                            <input class="env-form-input" type="email" name="email" id="email" ng-model="email" ng-pattern="/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/" ng-minlength="2" aria-required="true" required>
+                            <span style="color:red" ng-show="kontaktform.email.$invalid">
+                                <span ng-show="kontaktform.email.$error.required">E-post ska anges</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="env-form-element">
+                        <label for="selected" class="env-form-element__label env-text-weight--bold">Ditt land <span class="required">*</span></label>
+                        <div class="env-form-element__control">
+                            <select class="env-form-input" id="selected" ng-model="selected" name="selected">
+                                <option ng-repeat="country in countries" value="{{country}}">{{country}}</option>                 
+                            </select>
+                        </div>
+                    </div>
+                    <div class="env-form-element" >
+                        <label for="subject" class="env-form-element__label env-text-weight--bold">Ämne <span class="required">*</span></label>
+                        <div class="env-form-element__control">
+                            <input class="env-form-input" type="text" id="subject" ng-model="subject" name="subject" aria-required="true" required></div>
+                    </div>                    
+                    <div class="env-form-element" >
+                        <label for="message" class="env-form-element__label env-text-weight--bold">Fråga <span class="required">*</span></label>
+                        <div class="env-form-element__control">
+                            <textarea class="env-form-input" rows="5" id="message" name="message" ng-model="message" minlength="20" maxlength="3500" aria-required="true" required></textarea>
+                            <span style="color:red" ng-show="kontaktform.message.$invalid">
+                                <span ng-show="kontaktform.message.$error.required">Meddelande behövs</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="env-form-element">
+                        <div id="form-error" class="error"></div>
+                        <button id="submit" type="submit" class="env-button env-button--primary" ng-click="submit();" 
+                                ng-disabled="kontaktform.yourname.$invalid && kontaktform.email.$invalid && kontaktform.message.$error.required">Skicka</button> 
+                    </div>
+                </div>
+            </form>
+            <br/>
+            <div id="notes"></div>
+            <br/>
+        </div>
+        <script type="text/javascript" src="javascripts/angularForm.js"></script>
+    </body>
+</html>

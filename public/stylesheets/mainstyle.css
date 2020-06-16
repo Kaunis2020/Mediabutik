@@ -1,0 +1,64 @@
+/* 
+    Created on : 29 mars 2020, 12:05:27
+    Author     : Larissa
+*/
+
+li.white{
+    color:white;
+    font-weight: bolder;
+    font-size: medium;
+}
+
+div.rubrik {
+    display: inline-block;
+}
+
+#logo{
+    margin-top:0px;
+}
+
+#header1{
+    float:right;
+    margin-left:100px;
+    margin-top: 30px;
+    margin-right: 50px;
+    font-size:50px;
+    margin-bottom: 10px;
+}
+
+#maincontent{
+    clear:both;
+    float:right;
+    background-color: #ffffff;
+    width: 60%;
+    height: 60vh;
+    border-radius: 25px;
+    margin-top:-20px;
+    margin-right:85px;
+    text-align:center;
+}
+
+p.mainc{
+    margin-top:30px;
+    margin-bottom:20px;
+}
+
+#mainp{
+    margin-bottom:0px;
+    padding-bottom:0px;
+    font-size: 22px;
+    text-align: center;
+}
+
+#mainfooter{
+    clear:right;
+    margin:auto;
+    width:90%;
+}
+
+#utbud{
+    margin-top:10px;
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+}

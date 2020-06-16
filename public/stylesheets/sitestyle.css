@@ -1,0 +1,27 @@
+/* 
+    Created on : 30 mars 2020, 20:34:02
+    Author     : Larissa
+*/
+
+.intent{
+    width:60%;
+    margin:auto;
+    margin-top:30px;
+    margin-bottom:30px; 
+    text-align: center;
+}
+
+h2.rubrik{
+    margin-top: 70px;
+    text-align: center;
+}
+
+p.intent{
+    font-size:larger;
+}
+
+.epost {
+    color: blue;
+    text-decoration-color: blue;
+    text-decoration-line: underline;
+}

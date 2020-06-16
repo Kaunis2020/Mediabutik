@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title><%= title %></title>
+        <script src="javascripts/ejs.min.js"></script>
+        <script src="javascripts/jquery-3.4.1.min.js"></script>
+        <script src="javascripts/jquery-ui.min.js"></script>
+        <script src="javascripts/adminserver.js"></script>
+        <link rel="stylesheet" href="stylesheets/jquery-ui.min.css" type="text/css" />
+        <link rel="stylesheet" href="stylesheets/jquery-ui.structure.min.css" type="text/css" />
+        <link rel="stylesheet" href="stylesheets/jquery-ui.theme.min.css" type="text/css" />
+        <link rel="stylesheet" href="stylesheets/bootstrap.css" type="text/css" />
+        <link rel="stylesheet" href="stylesheets/style.css">
+    </head>
+    <body>
+        <script> setAdmin('<%- JSON.stringify(admindata) %>');</script>
+        <header>
+            <%- include ('menu'); %>
+        </header>
+        <audio controls id="nyaudio" preload="auto">
+            <source src="images/error.mp3" type="audio/mpeg">
+        </audio>
+        <main>
+            <div class="myjumbo">
+                <div class="centrerat">
+                    <h2>Admin-sida</h2>
+                    <p>Du är inloggad som: <%= admindata.user %></p>
+                    <h3>Tillgängliga databastjänster</h3>
+                    <table id="searchtable">
+                        <tr>
+                            <th>Autosök media</th>
+                            <th>Autosök anställd</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="ui-widget">
+                                    <input id="medtaggs">
+                                </div>                       
+                            </td>
+                            <td>
+                                <div class="ui-widget">
+                                    <input id="newtaggs">
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="messages" class="messmodal">
+                    <span class="myownclose" onclick="closeinfo();">&times;</span>
+                </div>
+                <div id="output" class="myownmodal">
+                    <span class="myownclose" onclick="closethis();">&times;</span>
+                </div>
+                <div id="container">
+                    <div class="left">
+                        <h3> Produkter </h3>
+                        <ul>
+                            <li class="links" onclick="getProductInfo();"><a id="klick_a">Visa info om media</a></li>
+                            <li class="links" onclick="displayDefault();"><a id="klick_b">Lägg till nya media</a></li>
+                            <li class="links" onclick="showMedInfo();"><a id="klick_c">Justera medias pris</a></li>
+                            <li class="links" onclick="showMedInfo();"><a id="klick_d">Uppdatera lagerantal</a></li>
+                            <li class="links" onclick="displayByType();"><a id="klick_e">Visa media per slag</a></li>
+                            <li class="links" onclick="displayDefault();"><a id="klick_w">Visa säljstatistiken</a></li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <h3> Personer </h3>
+                        <ul>
+                            <li class="links" onclick="displayCustomers();"><a id="klick_f">Visa info om kunderna</a></li>
+                            <li class="links" onclick="getMessages();"><a id="klick_g">Visa alla meddelanden</a></li>
+                            <li class="links" onclick="getStaffData();"><a id="klick_h">Visa info om anställda</a></li>
+                            <li class="links" onclick="showInfo();"><a id="klick_i">Ändra anställdas lön</a></li>
+                            <li class="links" onclick="showInfo();"><a id="klick_j">Uppdatera avdelning</a></li>
+                            <li class="links" onclick="displayDefault();"><a id="klick_k">Lägg till medarbetare</a></li>
+                        </ul>
+                    </div>
+                    <br/>
+                </div>
+                <br/>               
+            </div>
+            <div id="notes"></div>
+            <br/>
+            <br/>
+        </main>
+    </body>
+</html>

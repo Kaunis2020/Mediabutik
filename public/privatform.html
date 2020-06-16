@@ -1,0 +1,44 @@
+<div data-ng-app="regapp" data-ng-controller="RegisCtrl">
+    <form id="ju-srs" name="kontaktform" novalidate>
+        <div class="env-form">
+            <div class="env-form-element" >
+                <label for="firstname" class="env-form-element__label env-text-weight--bold">Förnamn <span class="required">*</span></label>
+                <div class="env-form-element__control">
+                    <input class="env-form-input" type="text" id="firstname" name="firstname" ng-model="firstname" ng-pattern="/^[a-zA-Z]+$/" ng-minlength="2" aria-required="true" required>
+                    <span style="color:red" ng-show="kontaktform.firstname.$invalid">
+                        <span ng-show="kontaktform.firstname.$error.required">Namn ska anges</span>
+                    </span>
+                </div>
+            </div>
+            <div class="env-form-element" >
+                <label for="lastname" class="env-form-element__label env-text-weight--bold">Efternamn <span class="required">*</span></label>
+                <div class="env-form-element__control">
+                    <input class="env-form-input" type="text" id="lastname" ng-model="lastname" name="lastname" ng-pattern="/^[a-zA-Z]+$/" ng-minlength="2" aria-required="true" required></div>
+                <span style="color:red" ng-show="kontaktform.lastname.$invalid">
+                    <span ng-show="kontaktform.lastname.$error.required">Namn ska anges</span>
+                </span>
+            </div>
+            <div class="env-form-element" >
+                <label for="email" class="env-form-element__label env-text-weight--bold">Din e-post <span class="required">*</span></label>
+                <div class="env-form-element__control">
+                    <input class="env-form-input" type="email" id="email" ng-model="email" ng-minlength="2" ng-pattern="/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/" ng-minlength="2" aria-required="true" required></div>
+                <span style="color:red" ng-show="kontaktform.email.$invalid">
+                    <span ng-show="kontaktform.email.$error.required">E-post ska anges</span>
+                </span>
+            </div>
+            <div class="env-form-element">
+                <label for="selected" class="env-form-element__label env-text-weight--bold">Ditt land <span class="required">*</span></label>
+                <div class="env-form-element__control">
+                    <select class="env-form-input" id="selected" ng-model="selected" name="selected">
+                        <option ng-repeat="country in countries" value="{{country}}">{{country}}</option>                 
+                    </select>
+                </div>
+            </div>
+            <div class="env-form-element">
+                <div id="form-error" class="error"></div>
+                <button id="submit" type="submit" class="env-button env-button--primary" ng-click="submitprivate();"
+                        ng-disabled="kontaktform.firstname.$invalid && kontaktform.firstname.$error.required || kontaktform.lastname.$invalid && kontaktform.lastname.$error.required || kontaktform.email.$invalid && kontaktform.email.$error.required">Skicka</button> 
+            </div>
+        </div>
+    </form>
+</div>

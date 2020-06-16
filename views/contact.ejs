@@ -1,0 +1,37 @@
+<form id="ju-srs" name="kontaktform" novalidate>
+    <div class="env-form">
+        <div class="env-form-element" >
+            <label for="yourname" class="env-form-element__label env-text-weight--bold">Ditt namn <span class="required">*</span></label>
+            <div class="env-form-element__control">
+                <input class="env-form-input" type="text" id="yourname" name="yourname" aria-required="true" required value="<%= personname %>">
+            </div>
+        </div>         
+        <div class="env-form-element" >
+            <label for="email" class="env-form-element__label env-text-weight--bold">Din e-post <span class="required">*</span></label>
+            <div class="env-form-element__control">
+                <input class="env-form-input" type="email" name="email" id="email" aria-required="true" required  value="<%= epost %>">
+            </div>
+        </div>
+        <div class="env-form-element" >
+            <label for="email" class="env-form-element__label env-text-weight--bold">Ditt land <span class="required">*</span></label>
+            <div class="env-form-element__control">
+                <input class="env-form-input" type="text" name="country" id="country" aria-required="true" required value="<%= country %>">
+            </div>
+        </div>        
+        <div class="env-form-element" >
+            <label for="subject" class="env-form-element__label env-text-weight--bold">Ämne <span class="required">*</span></label>
+            <div class="env-form-element__control">
+                <input class="env-form-input" type="text" id="subject" name="subject" aria-required="true" required></div>
+        </div>                    
+        <div class="env-form-element" >
+            <label for="message" class="env-form-element__label env-text-weight--bold">Fråga <span class="required">*</span></label>
+            <div class="env-form-element__control">
+                <textarea class="env-form-input" rows="5" id="message" name="message" maxlength="3500" aria-required="true" required></textarea>
+            </div>
+        </div>
+        <div class="env-form-element">
+            <div id="form-error" class="error"></div>
+            <button id="submit" type="button" class="env-button env-button--primary">Skicka</button> 
+        </div>
+    </div>
+</form>

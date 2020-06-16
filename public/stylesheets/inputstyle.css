@@ -1,0 +1,20 @@
+/* 
+    Created on : 30 maj 2020, 18:50:01
+    Author     : Larissa
+*/
+
+input[name=yourname] {
+    pointer-events: none;
+}
+
+input[name=email] {
+    pointer-events: none;
+}
+
+input[name=country] {
+    pointer-events: none;
+}
+
+#notes{
+    margin-left:40px;
+}

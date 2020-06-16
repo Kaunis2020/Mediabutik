@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!-- Larissa Rosenbrant, laro0501; 
+     Eftersom det inte var förbjudet att använda JQuery,
+     så använder jag JQuery för att arbeta med AJAX och visa tabell; -->
+<html ng-app="mainApp" ng-controller="mainController">
+    <head>
+        <title>Online Mediabutik</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="javascripts/angular.min.js"></script>
+        <script src="javascripts/angular-route.js"></script>
+        <script src="javascripts/angularMain.js"></script>
+        <link rel="stylesheet" href="stylesheets/bootstrap.css" type="text/css" />
+        <link rel="stylesheet" href="stylesheets/mainstyle.css" type="text/css" />        
+    </head>
+    <body>
+        <div class="jumbotron">
+            <div class="rubrik"><a href="adminlogin.html"><img id="logo" src="images/logotyp.jpg" alt="logo" /></a>
+                <h1  id="header1">Din mediaaffär på nätet</h1>
+            </div>
+            <div class="navbar navbar-inverse navbar-fixed-top">        
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="white"><a href="#">  &nbsp;  &nbsp;  Online Mediabutik</a></li>
+                        <li class="white"><a href="utbud.html">Sortiment</a></li>
+                        <li class="white"><a href ="about.html">Om oss</a></li>
+                        <li class="white"><a href="login.html">Logga in</a></li>
+                        <li class="white"><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="maincontent">
+                <p class="mainc">Vi har Sveriges största och bredaste utbud<br/>
+                    av böcker, datorspel, CD- samt DVD-skivor</p>
+                <p>Ny kund hos oss?<br/>Registrera Dig här:</p>
+                <p><a href="nykund.html">Registera Dig</a></p>
+                <div id="mainp">Kolla vårt sortiment:<br/>
+                    <ul id="utbud">
+                        <li><a href="cds.html">CD</a></li>
+                        <li><a href="books.html">Böcker</a></li>
+                        <li><a href="dvds.html">DVD</a></li>
+                    </ul>
+                </div>             
+            </div>
+        </div>
+        <footer id="mainfooter">
+            <hr />
+            <div>
+                <h5 class="text-black-50">{{get_date_time}} &nbsp; --- &nbsp; &copy; &nbsp; Online Mediabutik AB</h5>                 
+            </div>
+        </footer>
+        <br/>
+    </body>
+</html>

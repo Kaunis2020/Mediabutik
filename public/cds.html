@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--
+Larissa Rosenbrant
+-->
+<html>
+    <head>
+        <title>Utbud av CD</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="javascripts/angular.min.js"></script>
+        <script src="javascripts/jquery-3.4.1.min.js"></script>
+        <script src="javascripts/jquery-ui.min.js"></script>
+        <link rel="stylesheet" href="stylesheets/jquery-ui.min.css" type="text/css" />
+        <link rel="stylesheet" href="stylesheets/jquery-ui.structure.min.css" type="text/css" />
+        <link rel="stylesheet" href="stylesheets/jquery-ui.theme.min.css" type="text/css" />
+        <link rel="stylesheet" href="stylesheets/bootstrap.css" type="text/css" />
+        <link rel="stylesheet" href="stylesheets/style.css" type="text/css" />
+        <link rel="stylesheet" href="stylesheets/modalstil.css" type="text/css" />
+    </head>
+    <body>
+        <div class="navbar navbar-inverse navbar-fixed-top">        
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="white"><a href="index.html">  &nbsp;  &nbsp;  Online Mediabutik</a></li>
+                    <li class="white"><a href="utbud.html">Sortiment</a></li>
+                    <li class="white"><a href ="about.html">Om oss</a></li>
+                    <li class="white"><a href="login.html">Logga in</a></li>
+                    <li class="white"><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>   
+        <audio controls id="nyaudio" preload="auto">
+            <source src="images/error.mp3" type="audio/mpeg">
+        </audio>
+        <h2 class="rubrik">Utbud av våra CD-skivor</h2>
+        <table id="searchtable">
+            <caption>Sök i databasen</caption>
+            <tr>
+                <th>Sök med autocomplete</th>
+                <th>Sök med valfria sökord</th>
+            </tr>
+            <tr>
+                <td>I rutan nedan sök med autocomplete</td>
+                <td>I rutan nedan sök med valfria sökord</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="ui-widget">
+                        <input id="taggs">
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <input type="text" id="sokruta" name="sokruta" placeholder=" Fritext... ">
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <div data-ng-app="sharedapp" ng-controller="Cd_Ctrl" class="container">
+            <div id="videoModal" class="videomodal">
+                <span class="myclose" onclick="closethis();">&times;</span>
+                <div id="rightspalt">
+                    <div id="typ"></div>
+                    <div id="story"></div>
+                    <div id="year"></div>
+                    <div id="price"></div>
+                </div>
+                <div id="leftspalt">
+                    <img src ="" class="videomodal-content" id="img01" alt="pic">
+                    <div id="videocaption"></div>
+                </div>
+            </div>
+            <div id="mediatable"></div>
+
+            <div id="tabell" ng-controller="paginCtrl" class="container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID-Nr</th>
+                            <th>Titel</th>
+                            <th>Typ</th>
+                            <th>Genre</th>
+                            <th>Info</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="me in pagedItems[currentPage]">
+                            <td>{{me.ID_Nr}}</td>
+                            <td>{{me.Titel}}</td>
+                            <td>{{me.HuvudTyp}}</td>
+                            <td>{{me.Genre}}</td>
+                            <td class = "klickamig" id="varna" ng-click="setObject(me);">info</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div id="pagin" ng-include="'paginering.html'"></div>
+            </div>
+        </div>
+        <script src="javascripts/angularTypes.js"></script>
+    </body>
+</html>
+

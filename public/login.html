@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kund-inloggning</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="javascripts/angular.min.js"></script>
+        <link rel="stylesheet" href="stylesheets/bootstrap.css" type="text/css" />
+        <link rel="stylesheet" href="stylesheets/vision.css" type="text/css" />
+    </head>
+    <body data-ng-app="userapp" data-ng-controller="UserCtrl">
+        <div class="navbar navbar-inverse navbar-fixed-top">        
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="white"><a href="index.html">  &nbsp;  &nbsp;  Online Mediabutik</a></li>
+                    <li class="white"><a href="utbud.html">Sortiment</a></li>
+                    <li class="white"><a href ="about.html">Om oss</a></li>
+                    <li class="white"><a href="login.html">Logga in</a></li>
+                    <li class="white"><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="centrerat">
+            <h2>Logga in som kund</h2>
+            <br/>
+        </div>
+        <form name="form" novalidate>
+            <div class="env-form">
+                <div class="env-form-element" >
+                    <label for="username" class="env-form-element__label env-text-weight--bold">Användarnamn <span class="required">*</span></label>
+                    <div class="env-form-element__control">
+                        <input class="env-form-input" type="text" id="username" name="username" ng-model="username" ng-minlength="6" ng-maxlength="12" aria-required="true" required>
+                        <span style="color:red" ng-show="form.username.$invalid">
+                            <span ng-show="form.username.$error.required">Skall anges</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="env-form-element" >
+                    <label for="password" class="env-form-element__label env-text-weight--bold">Lösenord <span class="required">*</span></label>
+                    <div class="env-form-element__control">
+                        <input class="env-form-input" type="text" id="password" ng-model="password" name="password" ng-minlength="6" ng-maxlength="12" aria-required="true" required></div>
+                         <span style="color:red" ng-show="form.password.$invalid">
+                            <span ng-show="form.password.$error.required">Skall anges</span>
+                        </span>
+                </div>
+                <div class="env-form-element">
+                    <div id="form-error" class="error"></div>
+                    <button id="submit" type="submit" class="env-button env-button--primary" ng-click="submit();"
+                    ng-disabled="form.username.$invalid && form.username.$error.required || form.password.$invalid && form.password.$error.required">Skicka</button> 
+                </div>
+            </div>
+        </form>
+        <div id="notes"></div>
+        <script src="javascripts/angularUser.js"></script>
+    </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- Larissa Rosenbrant-->
+<html data-ng-app="regapp">
+    <head>
+        <title>Registrering ny kund</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stylesheets/bootstrap.css" type="text/css" />
+        <link rel="stylesheet" href="stylesheets/vision.css" type="text/css" />
+        <link rel="stylesheet" href="stylesheets/animation.css" type="text/css" />
+        <script src="javascripts/angular.min.js"></script>
+        <script src="javascripts/angular-animate.min.js"></script>
+    </head>
+    <body>
+        <div class="navbar navbar-inverse navbar-fixed-top">        
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="white"><a href="index.html">  &nbsp;  &nbsp;  Online Mediabutik</a></li>
+                    <li class="white"><a href="utbud.html">Sortiment</a></li>
+                    <li class="white"><a href ="about.html">Om oss</a></li>
+                    <li class="white"><a href="login.html">Logga in</a></li>
+                    <li class="white"><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="centrerat">
+                <h2>Registrering av ny kund</h2>
+                <p>
+                    På denna sida kan Du välja att registrera Dig <br />
+                    antingen som företagskund eller som privat kund.<br />
+                </p>
+                <p> Jag vill registrera mig som</p>
+            </div>
+            <div data-ng-controller="RegisCtrl">
+                <select class="env-form-input customer" ng-model="template" ng-options="t.name for t in templates">
+                    <option value="{{t}}">{{t}}</option>
+                </select>
+                <br/>
+                <div class="slide-animate-container">
+                    <div class="slide-animate" ng-include="template.url"></div>
+                </div>
+            </div>
+            <br/>
+            <div id="notes"></div>
+            <br/>
+        </div>
+        <script src="javascripts/angularRegist.js"></script>
+    </body>
+</html>

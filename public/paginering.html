@@ -1,0 +1,21 @@
+<body>
+    <div class="pagination pull-right">
+        <ul class="pagination hand">
+            <li class="page-item first-item" ng-class="{disabled: currentPage === 0}">
+                <a ng-click="setPageNum(0);"> First </a>
+            </li>
+            <li class="page-item previous-item" ng-class="{disabled: currentPage === 0}">
+                <a ng-click="prevPage();">« Prev</a>
+            </li>
+            <li ng-repeat="n in range(pagedItems.length, currentPage, currentPage + gap)"
+                ng-class="{active: n === currentPage};" ng-click="setPage();"> <a ng-bind="n + 1">1</a>
+            </li>
+            <li class="page-item next-item" ng-class="{disabled: currentPage === pagedItems.length - 1}">
+                <a ng-click="nextPage();">Next »</a>
+            </li>
+            <li class="page-item last-item" ng-class="{disabled: currentPage === pagedItems.length - 1}">
+                <a ng-click="setPageNum(pagedItems.length - 1);"> Last </a>
+            </li>
+        </ul>
+    </div>
+</body>

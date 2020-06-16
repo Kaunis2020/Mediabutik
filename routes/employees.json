@@ -1,0 +1,134 @@
+[
+  {
+    "_id": 1,
+    "Nummer": 1,
+    "ID": "EM6c7b2d7c",
+    "First_name": "Nicolas",
+    "Last_name": "Cage",
+    "Email": "nicolas@mediabutik.se",
+    "Phone": "08-123454",
+    "Department": "Design",
+    "Bild": "6c7b2d7c-6e.jpg"
+  },
+  {
+    "_id": 2,
+    "Nummer": 2,
+    "ID": "EM6fa573c9",
+    "First_name": "Jamie",
+    "Last_name": "Lee Curtis",
+    "Email": "jamie@mediabutik.se",
+    "Phone": "08-123543",
+    "Department": "Marketing",
+    "Bild": "6fa573c9-3e.jpg"
+  },
+  {
+    "_id": 3,
+    "Nummer": 3,
+    "ID": "EMcfeb08cb",
+    "First_name": "Julia",
+    "Last_name": "Roberts",
+    "Email": "julia@mediabutik.se",
+    "Phone": "08-123096",
+    "Department": "Cleaning",
+    "Bild": "cfeb08cb-5s.jpg"
+  },
+  {
+    "_id": 4,
+    "Nummer": 4,
+    "ID": "EM27096e0a",
+    "First_name": "John",
+    "Last_name": "Travolta",
+    "Email": "travolta@mediabutik.se",
+    "Phone": "08-123045",
+    "Department": "Development",
+    "Bild": "27096e0a-0a.jpg"
+  },
+   {
+    "_id": 5,
+    "Nummer": 5,
+    "ID": "EM63b18473",
+    "First_name": "John",
+    "Last_name": "Cusack",
+    "Email": "cusack@mediabutik.se",
+    "Phone": "08-123077",
+    "Department": "Sales",
+    "Bild": "63b18473-4k.jpg"
+  }, 
+  {
+    "_id": 6,
+    "Nummer": 6,
+    "ID": "EM982932be",
+    "First_name": "Mark",
+    "Last_name": "Wahlberg",
+    "Email": "mark@mediabutik.se",
+    "Phone": "08-123071",
+    "Department": "Sales",
+    "Bild": "982932be-9g.jpg"
+  },
+  {
+    "_id": 7,
+    "Nummer": 7,
+    "ID": "EM08597555",
+    "First_name": "Jason",
+    "Last_name": "Statham",
+    "Email": "statham@mediabutik.se",
+    "Phone": "08-123065",
+    "Department": "Support",
+    "Bild": "08597555-7m.jpg"
+  }, 
+  {
+    "_id": 8,
+    "Nummer": 8,
+    "ID": "EMee32bb00",
+    "First_name": "Meg",
+    "Last_name": "Ryan",
+    "Email": "megryan@mediabutik.se",
+    "Phone": "08-123075",
+    "Department": "Finance",
+    "Bild": "ee32bb00-cn.jpg"
+  },
+  {
+    "_id": 9,
+    "Nummer": 9,
+    "ID": "EM4fe2cb9e",
+    "First_name": "Sigourney",
+    "Last_name": "Weaver ",
+    "Email": "sigourney@mediabutik.se",
+    "Phone": "08-123251",
+    "Department": "Marketing",
+    "Bild": "4fe2cb9e-ae.jpg"
+  },
+  {
+    "_id": 10,
+    "Nummer": 10,
+    "ID": "EMb80ec5a8",
+    "First_name": "Jennifer",
+    "Last_name": "Aniston",
+    "Email": "jennifer@mediabutik.se",
+    "Phone": "08-123033",
+    "Department": "Sales",
+    "Bild": "b80ec5a8-7n.jpg"
+  },
+  {
+    "_id": 11,
+    "Nummer": 11,
+    "ID": "EM58bac45f",
+    "First_name": "Charlize",
+    "Last_name": "Theron",
+    "Email": "charlize@mediabutik.se",
+    "Phone": "08-123025",
+    "Department": "Design",
+    "Bild": "58bac45f-2n.jpg"
+  },
+   {
+    "_id": 12,
+    "Nummer": 12,
+    "ID": "EMfa8a8f85",
+    "First_name": "Edward",
+    "Last_name": "Norton",
+    "Email": "norton@mediabutik.se",
+    "Phone": "08-123243",
+    "Department": "Sales",
+    "Bild": "fa8a8f85-fI.jpg"
+  }  
+]

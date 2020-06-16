@@ -1,0 +1,307 @@
+body {
+    padding: 0px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+audio{
+    margin:0;
+    padding:0;
+    display:none;
+}
+
+a {
+    color: #00B7FF;
+}
+.myjumbo {
+    max-width: 90%;
+    height: auto;
+    margin:auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    color: inherit;
+    background-color: #eee;
+}
+
+li.white{
+    color:white;
+    font-weight: bolder;
+    font-size: medium;
+}
+
+h3.error{
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+}
+
+p{
+    font-size: medium;
+}
+
+h1.rubrik, h2.rubrik{
+    margin-top: 70px;
+    text-align: center;
+}
+
+#mediatable, #tabell{
+    width: 90%;
+    margin: auto;
+}
+
+#output table
+{
+    width: 290px;
+    height:450px;
+}
+
+#mediatable table, #tabell table {
+    float: left;
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 10px;
+    border: 1px solid black;
+}
+
+#output th, #output td,
+#mediatable th, #mediatable td, 
+#tabell th, #tabell td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.klickamig {
+    cursor: pointer;
+    text-decoration: underline;
+    background-color: #f0f8ff;
+    font-weight: bold;
+}
+
+#varna, #price, #depar, #salary, #slag, #stock {
+    color: red;
+}
+
+div.info{
+    margin: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+input[type = text] {
+    padding: 5px;
+    border-radius: .25rem;
+    border: 1px solid #ccc;
+    height: 35px;
+    margin-left: 20px;
+}
+
+#salary, #price, #stock{
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: .25rem;
+    border: 1px solid #ccc;
+    height: 30px;
+    width: 90px;
+    margin-left: 2px;
+    font-weight: bolder;
+}
+
+#depar{
+    margin-top:5px;
+    padding: 5px;
+    padding-top:2px;
+    border-radius: .25rem;
+    height: 30px;
+    width: 150px;
+    margin-left:0px;
+    font-weight: bolder;
+}
+
+#slag{
+    margin-top:5px;
+    padding: 5px;
+    padding-top:2px;
+    border-radius: .25rem;
+    height: 30px;
+    width: 150px;
+    margin-left:0px;
+    font-weight: bolder;
+    font-size:20px;
+}
+
+ul.hand{
+    cursor:pointer;
+}
+
+#searchtable {
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+#searchtable caption {
+    display: table-caption;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bolder;
+    padding-bottom: 15px;
+}
+
+#searchtable th, #searchtable td {
+    padding: 5px;
+    text-align: center;
+}
+
+#searchtable th {
+    font-size: 24px;
+}
+
+#searchtable td {
+    font-size: 20px;
+}
+
+#newtaggs, #medtaggs{
+    margin: 30px;
+    margin-top:15px;
+    height: 44px;
+    width: 300px;
+    background-color: white;
+    background-image: url('../images/searchicon.png');
+    background-position: 2px 1px;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    border: 2px solid;
+    border-color: #ccc000;
+    border-radius: 5px;
+}
+
+#taggs, #sokruta {
+    margin: 30px;
+    height: 44px;
+    width: 300px;
+    background-color: white;
+    background-image: url('../images/searchicon.png');
+    background-position: 2px 1px;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    border: 2px solid;
+    border-color: #ccc000;
+    border-radius: 5px;
+}
+
+#container {
+    width: 607px;
+    background-color: #000000;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+#container h3 {
+    margin-left: 15px;
+    font-weight: bolder;
+    color: red;
+}
+
+#container .left {
+    width: 287px;
+    background-color: #FFFFFF;
+    float: left;
+    margin: 8px;
+    padding: 8px;
+}
+
+#container .right {
+    width: 287px;
+    background-color: #FFFFFF;
+    float: left;
+    margin: 8px;
+    padding: 8px;
+}
+
+#container:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.links {
+    line-height: 1.8em;
+    font-size: 125%;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.myownmodal{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 100; /* Sit on top */
+    margin-top: 100px; /* Location of the box */
+    padding-top: 20px;
+    left: 40px;
+    top: 0;
+    width: 320px; /* Full width */
+    height: 450px; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #ffffff; /* Fallback color */
+    resize: none;
+    overflow-y: scroll;
+    overflow-x: hidden;    
+}
+
+/* The Close Button */
+div span.myownclose {
+    position: absolute;
+    top:0;
+    right: 5px;
+    color: #000000;
+    font-size: 42px;
+    font-weight: bolder;
+    transition: 0.3s;
+}
+
+.myownclose:hover,
+.myownclose:focus {
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#messages table{
+    margin-top: 25px;
+    width: 680px;
+}
+
+.messmodal{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 100; /* Sit on top */
+    margin-top: 100px; /* Location of the box */
+    padding-top: 20px;
+    left: 40px;
+    top: 0;
+    width: 700px; /* Full width */
+    height: 450px; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #ffffff; /* Fallback color */
+    resize: none;
+    overflow-y: scroll;
+    overflow-x: hidden;    
+}
+
+#messtable td{
+    text-wrap: normal;
+    padding-bottom:15px;
+    padding-right:10px;
+}
+
+.centrerat{
+    text-align: center;
+}
+
+h2.centrerat{
+    padding-top:5px;
+}

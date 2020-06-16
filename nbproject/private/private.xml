@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/Larissa/Documents/Webbutveckling_MIUN/JavaScript_II/PROJEKT/Projekt/public/dvds.html</file>
+            <file>file:/C:/Users/Larissa/Documents/Webbutveckling_MIUN/JavaScript_II/PROJEKT/Projekt/public/login.html</file>
+            <file>file:/C:/Users/Larissa/Documents/Webbutveckling_MIUN/JavaScript_II/PROJEKT/Projekt/routes/medialist.json</file>
+            <file>file:/C:/Users/Larissa/Documents/Webbutveckling_MIUN/JavaScript_II/PROJEKT/Projekt/views/contact.ejs</file>
+            <file>file:/C:/Users/Larissa/Documents/Webbutveckling_MIUN/JavaScript_II/PROJEKT/Projekt/routes/admin.js</file>
+            <file>file:/C:/Users/Larissa/Documents/Webbutveckling_MIUN/JavaScript_II/PROJEKT/Projekt/public/javascripts/angularMain.js</file>
+            <file>file:/C:/Users/Larissa/Documents/Webbutveckling_MIUN/JavaScript_II/PROJEKT/Projekt/public/adminlogin.html</file>
+            <file>file:/C:/Users/Larissa/Documents/Webbutveckling_MIUN/JavaScript_II/PROJEKT/Projekt/public/javascripts/angularTypes.js</file>
+            <file>file:/C:/Users/Larissa/Documents/Webbutveckling_MIUN/JavaScript_II/PROJEKT/Projekt/public/stylesheets/animation.css</file>
+            <file>file:/C:/Users/Larissa/Documents/Webbutveckling_MIUN/JavaScript_II/PROJEKT/Projekt/views/menu.ejs</file>
+            <file>file:/C:/Users/Larissa/Documents/Webbutveckling_MIUN/JavaScript_II/PROJEKT/Projekt/public/stylesheets/vision.css</file>
+            <file>file:/C:/Users/Larissa/Documents/Webbutveckling_MIUN/JavaScript_II/PROJEKT/Projekt/routes/users.js</file>
+            <file>file:/C:/Users/Larissa/Documents/Webbutveckling_MIUN/JavaScript_II/PROJEKT/Projekt/routes/media.js</file>
+            <file>file:/C:/Users/Larissa/Documents/Webbutveckling_MIUN/JavaScript_II/PROJEKT/Projekt/views/ownpage.ejs</file>
+            <file>file:/C:/Users/Larissa/Documents/Webbutveckling_MIUN/JavaScript_II/PROJEKT/Projekt/public/javascripts/angular-animate.js</file>
+            <file>file:/C:/Users/Larissa/Documents/Webbutveckling_MIUN/JavaScript_II/PROJEKT/Projekt/public/cds.html</file>
+            <file>file:/C:/Users/Larissa/Documents/Webbutveckling_MIUN/JavaScript_II/PROJEKT/Projekt/views/error.ejs</file>
+            <file>file:/C:/Users/Larissa/Documents/Webbutveckling_MIUN/JavaScript_II/PROJEKT/Projekt/routes/staff.js</file>
+            <file>file:/C:/Users/Larissa/Documents/Webbutveckling_MIUN/JavaScript_II/PROJEKT/Projekt/public/kontakt.html</file>
+            <file>file:/C:/Users/Larissa/Documents/Webbutveckling_MIUN/JavaScript_II/PROJEKT/Projekt/public/javascripts/angularForm.js</file>
+            <file>file:/C:/Users/Larissa/Documents/Webbutveckling_MIUN/JavaScript_II/PROJEKT/Projekt/public/javascripts/angularRegist.js</file>
+            <file>file:/C:/Users/Larissa/Documents/Webbutveckling_MIUN/JavaScript_II/PROJEKT/Projekt/public/firmaform.html</file>
+            <file>file:/C:/Users/Larissa/Documents/Webbutveckling_MIUN/JavaScript_II/PROJEKT/Projekt/public/javascripts/angularAdmin.js</file>
+            <file>file:/C:/Users/Larissa/Documents/Webbutveckling_MIUN/JavaScript_II/PROJEKT/Projekt/public/about.html</file>
+            <file>file:/C:/Users/Larissa/Documents/Webbutveckling_MIUN/JavaScript_II/PROJEKT/Projekt/routes/mongoose.js</file>
+            <file>file:/C:/Users/Larissa/Documents/Webbutveckling_MIUN/JavaScript_II/PROJEKT/Projekt/public/stylesheets/inputstyle.css</file>
+            <file>file:/C:/Users/Larissa/Documents/Webbutveckling_MIUN/JavaScript_II/PROJEKT/Projekt/routes/contact.js</file>
+            <file>file:/C:/Users/Larissa/Documents/Webbutveckling_MIUN/JavaScript_II/PROJEKT/Projekt/public/books.html</file>
+            <file>file:/C:/Users/Larissa/Documents/Webbutveckling_MIUN/JavaScript_II/PROJEKT/Projekt/app.js</file>
+            <file>file:/C:/Users/Larissa/Documents/Webbutveckling_MIUN/JavaScript_II/PROJEKT/Projekt/public/stylesheets/modalstil.css</file>
+            <file>file:/C:/Users/Larissa/Documents/Webbutveckling_MIUN/JavaScript_II/PROJEKT/Projekt/routes/index.js</file>
+            <file>file:/C:/Users/Larissa/Documents/Webbutveckling_MIUN/JavaScript_II/PROJEKT/Projekt/public/javascripts/AngularUser.js</file>
+            <file>file:/C:/Users/Larissa/Documents/Webbutveckling_MIUN/JavaScript_II/PROJEKT/Projekt/public/javascripts/userpage.js</file>
+            <file>file:/C:/Users/Larissa/Documents/Webbutveckling_MIUN/JavaScript_II/PROJEKT/Projekt/views/adminsida.ejs</file>
+            <file>file:/C:/Users/Larissa/Documents/Webbutveckling_MIUN/JavaScript_II/PROJEKT/Projekt/public/javascripts/adminserver.js</file>
+            <file>file:/C:/Users/Larissa/Documents/Webbutveckling_MIUN/JavaScript_II/PROJEKT/Projekt/public/utbud.html</file>
+            <file>file:/C:/Users/Larissa/Documents/Webbutveckling_MIUN/JavaScript_II/PROJEKT/Projekt/views/meny.ejs</file>
+            <file>file:/C:/Users/Larissa/Documents/Webbutveckling_MIUN/JavaScript_II/PROJEKT/Projekt/public/stylesheets/sitestyle.css</file>
+            <file>file:/C:/Users/Larissa/Documents/Webbutveckling_MIUN/JavaScript_II/PROJEKT/Projekt/public/stylesheets/style.css</file>
+            <file>file:/C:/Users/Larissa/Documents/Webbutveckling_MIUN/JavaScript_II/PROJEKT/Projekt/public/stylesheets/mainstyle.css</file>
+            <file>file:/C:/Users/Larissa/Documents/Webbutveckling_MIUN/JavaScript_II/PROJEKT/Projekt/public/javascripts/angularStaff.js</file>
+            <file>file:/C:/Users/Larissa/Documents/Webbutveckling_MIUN/JavaScript_II/PROJEKT/Projekt/routes/countries.js</file>
+            <file>file:/C:/Users/Larissa/Documents/Webbutveckling_MIUN/JavaScript_II/PROJEKT/Projekt/public/javascripts/angularMedia.js</file>
+            <file>file:/C:/Users/Larissa/Documents/Webbutveckling_MIUN/JavaScript_II/PROJEKT/Projekt/public/pagination.html</file>
+            <file>file:/C:/Users/Larissa/Documents/Webbutveckling_MIUN/JavaScript_II/PROJEKT/Projekt/routes/admin.json</file>
+            <file>file:/C:/Users/Larissa/Documents/Webbutveckling_MIUN/JavaScript_II/PROJEKT/Projekt/public/nykund.html</file>
+            <file>file:/C:/Users/Larissa/Documents/Webbutveckling_MIUN/JavaScript_II/PROJEKT/Projekt/public/index.html</file>
+        </group>
+    </open-files>
+</project-private>
